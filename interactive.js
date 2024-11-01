@@ -36,3 +36,4 @@ function deleteTitle() {
 }
 
 typeTitle(); // Start the typing effect
+
