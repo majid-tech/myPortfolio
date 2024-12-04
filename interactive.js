@@ -5,7 +5,7 @@ function toggleMenu() {
 
 
 // Hero Section Title Animation...
-const titles = ["UI & UX Designer", "Web Developer", "Graphic Designer", "Frontend Developer"];
+const titles = ["UI & UX Designer", "Web Developer", "Graphic Designer", "Mobile App Developer"];
 let index = 0;
 const dynamicTitle = document.querySelector(".dynamic-title");
 
