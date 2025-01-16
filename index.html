@@ -1,40 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio website for showcasing projects, skills, and contact information.">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
+      <p class="tagline">Building seamless user experiences and robust backends.</p>
+      <p class="animated-title">I am a <span class="typing">Full-Stack Developer</span></p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
 
-    <main>
-        <div class="bground">
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="your-photo.jpg" alt="Your Photo" class="profile-pic">
+        <div class="about-text">
+          <p>Hello! I am a passionate Full-Stack Developer with expertise in designing and developing dynamic websites and applications. My journey began with a love for coding and a desire to create impactful solutions.</p>
+          <h3>Skills</h3>
+          <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
-        <section class="hero">
-            <h1>Welcome!</h1>
-            <p>Hello, I am Mohammmed Majid, I am a ...</p> 
-        </section>
-    </main>
+      </div>
+    </div>
+  </section>
 
-    <section>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Example Project -->
+        <div class="project">
+          <img src="project1.jpg" alt="Project Screenshot">
+          <h3>Project Name</h3>
+          <p>A brief description of the project and the technologies used (e.g., React, Node.js).</p>
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn">GitHub Repo</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <!-- Resume Section -->
+  <section id="resume" class="resume">
+    <div class="container">
+      <h2>Resume</h2>
+      <a href="resume.pdf" class="btn" download>Download My Resume</a>
+      <div class="timeline">
+        <!-- Add timeline items here -->
+        <div class="timeline-item">
+          <h3>Job Title</h3>
+          <p>Company Name | Duration</p>
+          <p>Brief description of your role.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Blog Section (Optional) -->
+  <section id="blog" class="blog">
+    <div class="container">
+      <h2>Blog</h2>
+      <div class="blog-posts">
+        <div class="blog-post">
+          <h3>Post Title</h3>
+          <p>A short excerpt from the blog post...</p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <!-- Add more blog posts as needed -->
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2020 Mohammed Majid</p>
-    </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form action="/submit-form" method="POST" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <div class="social-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
+      <a href="#" class="back-to-top">Back to Top</a>
+    </div>
+  </footer>
 
-    <script src="interactive.js"></script>
 </body>
 </html>
