@@ -1,76 +1,107 @@
-*{
+/* General Reset */
+body, ul, li, a, button {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #f1f1f1;
-}
-
-.navbar{
-    position: fixed;
-    top: 30px;
-    left: 25%;
-    padding: 1rem 10rem;
-    background-color: #f1f112;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.555);
-    border-radius: 50px;
-    z-index: 1000;
-}
-
-ul {
-    display: flex;
-    gap: 1rem;
-}
-
-ul li{
     list-style: none;
-}
-
-ul li a{
     text-decoration: none;
-    color: #333;
-    padding: 0 1rem;
-}
-
-ul li a:hover{
-    color: #215794;
-}
-
-main {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333;
-    height: 100vh;
-    background-image: url(images/image.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.hero{
-    color: #fff;
-    text-align: center;
-    z-index: 1000;
-}
-
-.hero h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p{
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.bground {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #1a1a1a; /* Dark background for contrast */
+    color: #ffffff; /* Text color */
+    position: sticky; /* Stays at the top */
+    top: 0;
     width: 100%;
-    position: absolute;
-}
-
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds subtle depth */
+  }
+  
+  /* Container for Alignment */
+  .container {
+    max-width: 1200px; /* Limits content width */
+    margin: 0 auto;
+    padding: 0 20px; /* Adds spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; /* Sets navbar height */
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e4c1ae; /* Accent color for branding */
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .logo:hover {
+    color: #f5a623; /* Subtle hover effect */
+  }
+  
+  /* Hamburger Menu Styling */
+  .hamburger {
+    display: none; /* Hidden by default */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 20px; /* Spacing between links */
+  }
+  
+  .nav-links li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+    padding: 8px 12px;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    color: #f5a623; /* Accent color for active link */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover background */
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block; /* Show hamburger on smaller screens */
+    }
+  
+    .nav-links {
+      display: none; /* Hide links initially */
+      flex-direction: column;
+      background-color: #1a1a1a;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+  
+    .nav-links.active {
+      display: flex; /* Show links when active */
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  
+    .nav-links li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
