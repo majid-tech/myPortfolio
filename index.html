@@ -6,9 +6,10 @@
     <title>Using Materialize</title>
     <link type="text/css" rel="stylesheet" href="/css/materialize.min.css" media="screen, projection">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-
+  <!-- navbar -->
     <div class="navbar-fixed">
         <nav class="grey darken-4">
           <div class="container">
@@ -23,13 +24,13 @@
           </div>
         </nav>
     </div>
-<!-- Hero section -->
 
+      <!-- Hero section -->
     <section class="row Hero">
-      <div class="image-container center col l4 s12 m12">
+      <div class="image-container center col l4 s12 m12" data-aos="fade-right" data-aos-duration="3000">
         <img src="/images/image.jpg" class="responsive-img hoverable" alt="">
       </div>
-      <div class="text-container center col l4 s12 m12 pull-l2">
+      <div class="text-container center col l4 s12 m12 pull-l2" data-aos="fade-left" data-aos-duration="3000">
         <h2 class="white-text">Hi, I'm Majid Mohammed</h2>
         <h5 class="white-text">A Passionate Frontend Developer</h5>
         <p class="white-text">I specialize in building interactive and responsive web applications using modern front-end technologies. Let's build something amazing together!</p>
@@ -37,11 +38,17 @@
     </section>
 
     <div class="container" id="projects">
+      <div class="center">
+        <h4>Projects</h4>
+      </div>
         <div class="row">
-            <div class="col s12 m6 l4">
-              <div class="card">
+            <div class="col s12 m6 l4" 
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+              <div class="card hoverable">
                 <div class="card-image">
-                  <img src="/images/marek-piwnicki-FrR0nSrJyyw-unsplash.jpg">
+                  <img src="/images/venti-views-L0mccHawr6M-unsplash.jpg">
                   <span class="card-title">Card Title</span>
                 </div>
                 <div class="card-content">
@@ -49,13 +56,16 @@
                   I am convenient because I require little markup to use effectively.</p>
                 </div>
                 <div class="card-action">
-                  <a href="#">This is a link</a>
+                  <a href="#">View Project</a>
                 </div>
               </div>
             </div>
     
-            <div class="col s12 m6 l4">
-                <div class="card">
+            <div class="col s12 m6 l4" 
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+                <div class="card hoverable">
                   <div class="card-image">
                     <img src="/images/philipp-dusel--Mbfhs0u4YQ-unsplash.jpg">
                     <span class="card-title">Card Title</span>
@@ -65,13 +75,16 @@
                     I am convenient because I require little markup to use effectively.</p>
                   </div>
                   <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="#">View Project</a>
                   </div>
                 </div>
               </div>
     
-              <div class="col s12 m6 l4">
-                <div class="card">
+              <div class="col s12 m6 l4" 
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000">
+                <div class="card hoverable">
                   <div class="card-image">
                     <img src="/images/venti-views-L0mccHawr6M-unsplash.jpg">
                     <span class="card-title">Card Title</span>
@@ -81,15 +94,69 @@
                     I am convenient because I require little markup to use effectively.</p>
                   </div>
                   <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="#">View Project</a>
                   </div>
                 </div>
               </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m6 l4">
+            <div class="card hoverable">
+              <div class="card-image">
+                <img src="/images/venti-views-L0mccHawr6M-unsplash.jpg">
+                <span class="card-title">Card Title</span>
+              </div>
+              <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#">View Project</a>
+              </div>
+            </div>
           </div>
+  
+          <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="/images/philipp-dusel--Mbfhs0u4YQ-unsplash.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">View Project</a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col s12 m6 l4">
+              <div class="card hoverable">
+                <div class="card-image">
+                  <img src="/images/venti-views-L0mccHawr6M-unsplash.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">View Project</a>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
     
        
 
     <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
