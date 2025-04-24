@@ -3,9 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
 </head>
+
 <body>
-  
+  <header>
+    <div class="logo">
+      <img src="" alt="logo">
+    </div>
+    <button class="nav.toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">My Services</a></li>
+        <li class="nav__item"><a href="#">About me</a></li>
+        <li class="nav__item"><a href="#">My Work</a></li>
+      </ul>
+    </nav>
+  </header>  
+
+  <!-- Introduction -->
+   <section class="intro" id="home">
+    <h1 class="section__title section__title--intro">
+      Hi, I am <strong>Majid Mohammed</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro">Full-stack dev</p>
+    <img src="images/image.jpg" alt="a picture of Majid">
+   </section>
+
+  <!-- My Services -->
+   <section class="my-services" id="services">
+    <h2 class="section__title section__title--services">What I do</h2>
+    <div class="services">
+
+      <div class="service">
+        <h3>Design + Development</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptatem maiores officia culpa cum aperiam assumenda ullam adipisci unde laudantium reprehenderit! Fugiat placeat saepe ipsam alias aut. 
+          Perferendis molestiae ullam pariatur?
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>E-Commerce</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptatem maiores officia culpa cum aperiam assumenda ullam adipisci unde laudantium reprehenderit! Fugiat placeat saepe ipsam alias aut. 
+          Perferendis molestiae ullam pariatur?
+        </p>
+      </div>
+
+      <div class="service">
+        <h3>WordPress</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptatem maiores officia culpa cum aperiam assumenda ullam adipisci unde laudantium reprehenderit! Fugiat placeat saepe ipsam alias aut. 
+          Perferendis molestiae ullam pariatur?
+        </p>
+      </div>
+
+    </div>
+
+    <a href="#work" class="btn">My Work</a>
+   </section>
+
+   <!-- About Me -->
+   <section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I am</h2>
+    <p class="section__subtitle section__subtitle--about"></p>
+
+    <div class="about-me__body">
+      <p></p>
+      <p></p>
+    </div>
+
+    <img src="images/marek-piwnicki-FrR0nSrJyyw-unsplash.jpg" alt="">
+   </section>
+
+   <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle"></p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+         <a href="#" class="portfolio__item">
+          <img src="images/venti-views-L0mccHawr6M-unsplash.jpg" alt="" class="portfolio__img">
+         </a>
+
+      </div>
+    </section>
+
+    <!-- footer -->
+     <footer>
+      <a href="mailto:majidmohammed044@gmail.com" class="footer__link">majidmohammed044@gmail.com</a>
+      <ul class="social-list">
+        <li class="social-list__item"><a href="#" class="social-list__link">a</a></li>
+        <li class="social-list__item"><a href="#" class="social-list__link">b</a></li>
+        <li class="social-list__item"><a href="#" class="social-list__link">c</a></li>
+        <li class="social-list__item"><a href="#" class="social-list__link">d</a></li>
+      </ul>
+     </footer>
 </body>
 </html>
